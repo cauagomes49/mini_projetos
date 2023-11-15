@@ -5,14 +5,13 @@ class Contato:
 
     def __init__(self, nome):
         self.nome = nome
-        self.quantidade = 0
         self.fones = []
 
     def getName(self) -> str:
         return self.nome
 
     def getQuantidadeFones(self) -> int:
-        return self.quantidade
+        return len(self.fones)
 
     def getFones(self) -> list:
         return self.fones
