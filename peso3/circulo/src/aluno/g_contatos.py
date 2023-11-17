@@ -1,12 +1,14 @@
-from cliente.circulo_base import CirculoBase
-from cliente.contato_base import ContatoBase
-from cliente.icirculo_operations_manager import ICirculoOperationsManager
-from cliente.icirculos_manager import ICirculosManager
-from cliente.icontatos_manager import IContatosManager
+from circulo_base import CirculoBase
+from contato_base import ContatoBase
+from icirculo_operations_manager import ICirculoOperationsManager
+from icirculos_manager import ICirculosManager
+from icontatos_manager import IContatosManager
 
 
 
 class GContatos(IContatosManager, ICirculosManager, ICirculoOperationsManager):
+    def __init__(self):
+        self.contatos = []
 
     def createContact(self, id: str, email: str) -> bool:
         return False

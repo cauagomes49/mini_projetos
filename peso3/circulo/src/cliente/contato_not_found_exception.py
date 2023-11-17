@@ -1,4 +1,4 @@
-from cliente.exception_base import ExceptionBase
+from exception_base import ExceptionBase
 
 
 class ContatoNotFoundException  (ExceptionBase):

@@ -1,4 +1,4 @@
-from cliente.exception_base import ExceptionBase
+from exception_base import ExceptionBase
 
 
 class CirculoNotFoundException (ExceptionBase):
@@ -9,4 +9,4 @@ class CirculoNotFoundException (ExceptionBase):
         super.__init__(message)
 
     def getCirculoNaoEncontrado(self):
-        return None
+        return f"Círculo com ID '{self.circuloId}' não foi encontrado."

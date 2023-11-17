@@ -1,4 +1,4 @@
-from cliente.circulo_base import CirculoBase
+from circulo_base import CirculoBase
 
 
 class Circulo(CirculoBase):
@@ -11,4 +11,4 @@ class Circulo(CirculoBase):
 
 
     def setLimite(self, limite: int):
-        pass
+        self.limite = limite

@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from cliente.circulo_base import CirculoBase
+from circulo_base import CirculoBase
 
 
 class ICirculosManager(ABC):

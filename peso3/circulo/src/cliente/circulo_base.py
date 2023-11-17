@@ -6,17 +6,17 @@ class CirculoBase(ABC):
     def __init__(self, id: str, limite: int):
         self.id = id
         self.limite = limite
+        self.number = 0
 
     @abstractmethod
     def setLimite(self, limite: int):
-        pass
+        self.limite = limite
 
     def getId(self):
-        return None
+        return self.id
 
     def getLimite(self):
-        return 0
-
+        return self.limite
     @abstractmethod
     def getNumberOfContacts(self):
-        pass
+        return self.number
