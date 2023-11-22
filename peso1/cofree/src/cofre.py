@@ -1,5 +1,5 @@
-from item import Item
-from moeda import Moeda
+from peso1.cofree.src.item import Item
+from peso1.cofree.src.moeda import Moeda
 
 class Cofre:
 
