@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/peso3/circulo/src/cliente" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/peso1/cofre/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/peso1/lapiseira-e-grafite/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/peso1/carroecologico" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.10" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
