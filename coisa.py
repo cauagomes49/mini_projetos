@@ -1,40 +1,16 @@
-# Função para organizar uma lista por tipos
-# Função para organizar uma lista por tipos específicos
-from enum import Enum
+# String existente com espaços
+string_existente = 'gato e peixe'
 
-# Definindo a enumeração Tipo
-class Tipo(Enum):
-    PROF = 'PROF'
-    STA = 'STA'
-    TER = 'TER'
+# Novos itens a serem adicionados
+novos_itens = ['casa', 'cachorro']
 
-# Definindo a classe Funcionario
-class Funcionario:
-    def __init__(self, nome, tipo):
-        self.nome = nome
-        self.tipo = tipo
+# Convertendo a string existente em uma lista e removendo espaços
+itens_existente = string_existente.split(' ')
 
-# Classe que contém o método getFuncionariosPorCategorias
-class SuaClasse:
-    def __init__(self):
-        # Suponha que você tenha uma lista de funcionários
-        self.funcionarios = [
-            Funcionario('Alice', Tipo.PROF),
-            Funcionario('Bob', Tipo.STA),
-            Funcionario('Carol', Tipo.TER),
-            Funcionario('David', Tipo.PROF),
-            Funcionario('Eva', Tipo.STA),
-            Funcionario('Frank', Tipo.TER),
-        ]
+# Adicionando novos itens à lista existente
+itens_existente.extend(novos_itens)
 
-    def getFuncionariosPorCategorias(self, tipo: Tipo) -> list:
-        """
-        Retorna a lista de funcionarios por tipo
-        Arguments:
-            tipo: tipo de funcionario que devem ser retornados
-        Returns:
-            lista de funcionario do tipo indicado
-        """
-        funcionarios_por_tipo = [funcionario for funcionario in self.funcionarios if funcionario.tipo == tipo]
-        return funcionarios_por_tipo
+# Unindo todos os itens em uma única string com vírgula
+string_com_novos_itens = ', '.join(itens_existente)
 
+print(string_com_novos_itens)
